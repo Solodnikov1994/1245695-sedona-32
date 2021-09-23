@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Солодников](https://up.htmlacademy.ru/htmlcss/32/user/1245695).
-* Наставник: [Даня Прокопенко](https://htmlacademy.ru/profile/id324297).
+* Наставник: [Данила Прокопенко](https://htmlacademy.ru/profile/id324297).
 
 ---
 
