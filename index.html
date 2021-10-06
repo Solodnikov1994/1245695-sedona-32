@@ -3,18 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <style>
-      .index-background {
-          background-image: url("img/index-background.jpg");
-          width: 1200px;
-          height: 485px;
-      }
-      .appointment {
-          background-image: url("img/background.jpg");
-          width: 1200px;
-          height: 411px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -45,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +54,7 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">— №1 —</p>
+            <p class="advantages-description number">— №1 —</p>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="real-town" src="img/real-town.jpg" width="800" height="384" alt="Настоящий городок">
           </li>
@@ -86,23 +75,23 @@
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">— №2 —</p>
+            <p class="advantages-description number">— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="devil's-bridge" src="img/devil's-bridge.jpg" width="800" height="384" alt="Мост дьявола">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
-            <p class="advantages-description">— №3 —</p>
+            <p class="advantages-description number">— №3 —</p>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Красивая дорога</h3>
-            <p class="advantages-description">— №4 —</p>
+            <p class="advantages-description number">— №4 —</p>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Мало туристов</h3>
-            <p class="advantages-description">— №5 —</p>
+            <p class="advantages-description number">— №5 —</p>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
@@ -110,7 +99,7 @@
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="navigation-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
       <section class="appointment">
         <h2 class="appointment-title">Подпишитесь на рассылку</h2>
@@ -119,7 +108,7 @@
           <p class="appointment-form-e-mail">
             <input type="email" id="appointment-e-mail" name="email" placeholder="Ваш e-mail">
           </p>
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -128,22 +117,22 @@
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a class="button footer-social-link" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter </span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
+            <a class="button footer-social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a class="button footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212">+7 (812) 812 12 12</a>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812 12 12</a>
         <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
       </section>
     </footer>
