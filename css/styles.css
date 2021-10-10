@@ -15,7 +15,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -37,6 +45,18 @@ body {
   text-transform: uppercase;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -44,6 +64,32 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
+.number-of-favorites {
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  background: #7DB54F;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .index-background {
@@ -76,6 +122,13 @@ h2 {
   text-align: center;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 h3 {
   font-weight: 700;
   font-size: 24px;
@@ -99,14 +152,21 @@ h3 {
 
 .advantages_item_2,
 .advantages_item_6 {
+  width: 400px;
   background: rgba(131, 179, 211, 0.12);
 }
 
+.advantages_item_3 {
+  width: 400px;
+}
+
 .advantages_item_7 {
+  width: 400px;
   background: rgba(131, 179, 211, 0.2);
 }
 
 .advantages_item_1 {
+  width: 1200px;
   background: #83B3D3;
 }
 
@@ -168,7 +228,7 @@ h3 {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .catalog-filter-title {
@@ -200,16 +260,18 @@ h3 {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  background: transparent;
 }
 
 .sorting {
   line-height: 39px;
 }
 
-.appointment-form select {
+.cheap{
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  text-decoration: none;
 }
 
 .button_transparent {
@@ -258,8 +320,26 @@ h3 {
   line-height: 23px;
 }
 
+.appointment-form select {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
 .appointment-catalog {
   text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-link {
@@ -268,11 +348,18 @@ h3 {
 }
 
 .footer-contacts-address-phone {
+  display: block;
+  margin: 0 auto;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.htmlacademy-title {
+  max-width: 240px;
+  margin-left: auto;
 }
 
 .htmlacademy-link {

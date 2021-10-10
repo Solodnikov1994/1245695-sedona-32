@@ -30,7 +30,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное<sup>12</sup></span>
+              <span class="visually-hidden">Избранное<sup class="number-of-favorites">12</sup></span>
             </a>
           </li>
           <li class="navigation-item">
@@ -61,22 +61,16 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>
-                  Бассейн
-                  </label>
+                  <label class="control">Бассейн</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking-space" checked>
-                  Парковка
-                  </label>
+                  <label class="control">Парковка</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="wi-fi">
-                  Wi-Fi
-                  </label>
+                  <label class="control">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -84,22 +78,16 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="type of housing" value="hotel" checked>
-                  Гостиница
-                  </label>
+                  <label class="control">Гостиница</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="type of housing" value="the-motel">
-                  Мотель
-                  </label>
+                  <label class="control">Мотель</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="type of housing" value="apartments">
-                  Апартаменты
-                  </label>
+                  <label class="control">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -125,11 +113,7 @@
       </div>
       <section class="catalog-sorting">
         <h2 class="sorting">Найдено гостиниц: 38</h2>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <select name="hotels">
-            <option value="Сначала дешевые">Сначала дешевые</option>
-          </select>
-         </form>
+        <a class="cheap" href="#">Сначала дешевые</a>
         <ul class="mode-list">
           <li class="mode-item">
             <a class="button button_transparent" href="#">
@@ -231,8 +215,8 @@
       </section>
     </main>
     <footer class="page-footer">
+      <h2 class="visually-hidden">Давайте дружить</h2>
       <section class="footer-social">
-        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button footer-social-link" href="https://twitter.com/htmlacademy_ru">
