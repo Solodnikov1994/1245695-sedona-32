@@ -144,10 +144,14 @@
               <a class="catalog-sorting-link" href="#">
                 <img class="catalog-sorting-image" src="img/hotels/amara-resort-&-spa.jpg" width="180" height="120" alt="Amara Resort & Spa">
               </a>
-              <p class="cost">Гостиница</p>
-              <a class="button button_brown" href="#">Подробнее</a>
-              <p class="cost">От 4000 ₽</p>
-              <a class="button button_blue" href="#">В избранное</a>
+              <p class="real-estate">Гостиница</p>
+              <span class="cost">От 4000 ₽</span>
+              <div class="more_detailed">
+                <a class="button button_brown" href="#">Подробнее</a>
+              </div>
+              <div class="favourites">
+                <a class="button button_blue" href="#">В избранное</a>
+              </div>
               <p class="button button_rating">Рейтинг: 8,5</p>
             </li>
             <li class="catalog-sorting-item">
@@ -155,10 +159,14 @@
               <a class="catalog-sorting-link" href="#">
                 <img class="catalog-sorting-image" src="img/hotels/desert-quail-inn.jpg" width="180" height="120" alt="Desert Quail Inn">
               </a>
-              <p class="cost">Мотель</p>
-              <a class="button button_brown" href="#">Подробнее</a>
-              <p class="cost">От 3000 ₽</p>
-              <a class="button button_blue" href="#">В избранное</a>
+              <p class="real-estate">Мотель</p>
+              <span class="cost">От 3000 ₽</span>
+              <div class="more_detailed">
+                <a class="button button_brown" href="#">Подробнее</a>
+              </div>
+              <div class="favourites">
+                <a class="button button_blue" href="#">В избранное</a>
+              </div>
               <p class="button button_rating">Рейтинг: 8,9</p>
             </li>
             <li class="catalog-sorting-item">
@@ -166,10 +174,14 @@
               <a class="catalog-sorting-link" href="#">
                 <img class="catalog-sorting-image" src="img/hotels/villas-at-poco-diablo.jpg" width="180" height="120" alt="Villas at Poco Diablo">
               </a>
-              <p class="cost">Апартаменты</p>
-              <a class="button button_brown" href="#">Подробнее</a>
-              <p class="cost">От 2000 ₽</p>
-              <a class="button button_grenn" href="#">В избранном</a>
+              <p class="real-estate">Апартаменты</p>
+              <span class="cost">От 2000 ₽</span>
+              <div class="more_detailed">
+                <a class="button button_brown" href="#">Подробнее</a>
+              </div>
+              <div class="favorites">
+                <a class="button button_grenn" href="#">В избранном</a>
+              </div>
               <p class="button button_rating">Рейтинг: 9,2</p>
             </li>
             <li class="catalog-sorting-item">
@@ -177,10 +189,14 @@
               <a class="catalog-sorting-link" href="#">
                 <img class="catalog-sorting-image" src="img/hotels/green-tree-inn.jpg" width="180" height="120" alt="GreenTree Inn">
               </a>
-              <p class="cost">Гостиница</p>
-              <a class="button button_brown" href="#">Подробнее</a>
-              <p class="cost">От 3000 ₽</p>
-              <a class="button button_blue" href="#">В избранное</a>
+              <p class="real-estate">Гостиница</p>
+              <span class="cost">От 3000 ₽</span>
+              <div class="more_detailed">
+                <a class="button button_brown" href="#">Подробнее</a>
+              </div>
+              <div class="favourites">
+                <a class="button button_blue" href="#">В избранное</a>
+              </div>
               <p class="button button_rating">Рейтинг: 9,2</p>
             </li>
           </ul>
@@ -208,7 +224,7 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="number-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="number-of-hotels">Гостиниц на странице:</label>
               <select name="number of hotels">
                 <option value="4">4</option>
@@ -218,11 +234,13 @@
         </section>
         <section class="appointment-catalog">
           <h2 class="appointment-catalog-title">Подпишитесь на рассылку</h2>
-          <p class="appointment-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" id="appointment-e-mail" name="email" placeholder="Ваш e-mail">
-            <button class="button button_blue_big" type="submit">Подписаться</button>
-          </form>
+          <p class="appointment-catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <div class="subscribe">
+            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input type="email" id="appointment-e-mail" name="email" placeholder="Ваш e-mail">
+              <button class="button button_blue_big" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
