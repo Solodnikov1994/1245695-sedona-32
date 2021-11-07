@@ -65,14 +65,14 @@
                         <p class="cart-item-estate">Мотель</p>
                       </div>
                     </a>
-                    <a class="basket-link" href="#">
+                    <button class="basket-link" type="button">
                       <svg class="basket" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
                         <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z"/>
                         <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
                         <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
                       </svg>
-                    </a>
+                    </button>
                   </li>
                   <li class="cart-items">
                     <a class="cart-item-link" href="#">
@@ -82,14 +82,14 @@
                         <p class="cart-item-estate">Апартаменты</p>
                       </div>
                     </a>
-                    <a class="basket-link" href="#">
+                    <button class="basket-link" type="button">
                       <svg class="basket" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
                         <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z"/>
                         <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
                         <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
                       </svg>
-                    </a>
+                    </button>
                   </li>
                 </ul>
                 <a class="button button_brown all_favorites" href="#">Все избранные</a>
@@ -231,5 +231,64 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <svg class="ellipse" aria-hidden="true" focusable="false" width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26.5" cy="26.5" r="26.5"/>
+            </svg>
+            <svg class="close" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="modal-form">
+            <form class="arrival-date" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="date">Дата заезда:</label>
+              <input type="date" id="auth-date" name="date" placeholder="Укажите дату">
+            </form>
+            <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+            <form class="departure-date" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="date">Дата выезда:</label>
+              <input type="date" id="auth-date" name="date" placeholder="Укажите дату">
+            </form>
+            <p class="success-message">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="number-adults">
+              <span class="adults">Взрослые:</span>
+            </div>
+            <ul class="quantity">
+              <li class="quantity-link">
+                <svg class="minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                </svg>
+              </li>
+              <li>
+                <span class="quantity-adults">2</span>
+              </li>
+              <li class="quantity-link">
+                <svg class="plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                </svg>
+              </li>
+            </ul>
+            <div class="number-children">
+              <span class="adults">Дети:</span>
+            </div>
+            <div class="quantity-children">
+              <svg class="minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+              <span class="quantity-adults">1</span>
+              <svg class="plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+              </svg>
+            </div>
+            <button class="button button_brown_big button-modal" type="submit">Найти</button>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
