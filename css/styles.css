@@ -169,19 +169,22 @@ body {
   opacity: 0.3;
 }
 
-.number-of-favorites {
+.icon-current {
   position: relative;
-  top: -4px;
-  left: 11px;
-  display: block;
-  min-width: 13px;
-  min-height: 13px;
-  padding: 1px;
+}
+
+.icon-current::after {
+  content: "12";
   font-size: 10px;
   line-height: 13px;
   color: #FFFFFF;
-  background: #7DB54F;
-  border: 1px solid transparent;
+  position: absolute;
+  bottom: 16px;
+  left: 21px;
+  width: 19px;
+  height: 16px;
+  padding-top: 3px;
+  background-color: #7DB54F;
   border-radius: 50%;
 }
 
@@ -193,7 +196,7 @@ body {
 .popover {
   position: absolute;
   top: 63px;
-  left: -158px;
+  left: -180px;
   z-index: 1;
   width: 400px;
   padding: 15px;
@@ -226,7 +229,7 @@ body {
 .triangle {
   position: absolute;
   top: -25px;
-  left: 165px;
+  left: 172px;
   fill: #FFFFFF;
 }
 
@@ -237,13 +240,15 @@ body {
 .cart-items {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .cart-item-link {
   position: relative;
   display: block;
-  min-height: 48px;
   padding: 10px;
+  margin-bottom: -27px;
   text-decoration: none;
 }
 
@@ -279,7 +284,7 @@ body {
 
 .cart-item-estate {
   position: relative;
-  top: -25px;
+  top: -27px;
   margin: 0;
   padding-left: 17px;
   font-size: 16px;
@@ -288,6 +293,9 @@ body {
 }
 
 .cart-item-image {
+  position: relative;
+  top: -2px;
+  right: 1px;
   border-radius: 50%;
   order: -1;
 }
@@ -301,7 +309,8 @@ body {
   position: relative;
   width: 36px;
   height: 36px;
-  top: 15px;
+  top: 5px;
+  right: -10px;
   border: none;
   background-color: transparent;
   opacity: 0.2;
@@ -338,8 +347,9 @@ body {
   position: relative;
   left: -16px;
   top: 1px;
-  padding: 22px 0;
   width: 400px;
+  padding: 17px 0 22px;
+  margin-top: 8px;
   border-radius: 0px 0px 20px 20px;
 }
 
@@ -834,6 +844,11 @@ input[type="radio"]:checked + label::before {
   background: #3F5E72;
 }
 
+input[type="radio"]:focus + label::before {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
@@ -1046,7 +1061,7 @@ input[type="checkbox"]:active + label::before {
 .catalog-sorting-hotel {
   margin: 0;
   padding-top: 48px;
-  padding-bottom: 42px;
+  padding-bottom: 38px;
   display: flex;
 }
 
@@ -1155,8 +1170,9 @@ input[type="checkbox"]:active + label::before {
 }
 
 .catalog-sorting-list {
-  display: block;
-  margin: 0 auto;
+  display: grid;
+  grid-row: 1fr;
+  margin: 0 72px;
   padding: 0;
   list-style-type: none;
 }
@@ -1174,6 +1190,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .catalog-sorting-title {
+  position: relative;
+  top: -4px;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
   margin: 0;
@@ -1241,6 +1259,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .real-estate {
+  position: relative;
+  top: -12px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0;
@@ -1250,6 +1270,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .cost {
+  position: relative;
+  top: -12px;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   padding-left: 8px;
@@ -1258,18 +1280,25 @@ input[type="checkbox"]:active + label::before {
 }
 
 .more-detailed {
+  position: relative;
+  top: 3px;
+  right: 1px;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   padding-left: 37px;
 }
 
 .favourites {
+  position: relative;
+  top: 3px;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   padding-left: 8px;
 }
 
 .favorites {
+  position: relative;
+  top: 3px;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   padding-left: 8px;
@@ -1320,6 +1349,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .button_rating {
+  position: relative;
+  top: 3px;
   grid-column: 4 / 5;
   grid-row: 3 / 4;
   margin: 0;
@@ -1331,20 +1362,20 @@ input[type="checkbox"]:active + label::before {
 .catalog-sorting-item:nth-child(1) {
   background-image: url("../img/stars-four.svg");
   background-repeat: no-repeat;
-  background-position: 1070px 34px;
+  background-position: 930px 33px;
 }
 
 .catalog-sorting-item:nth-child(2) {
   background-image: url("../img/stars-three.svg");
   background-repeat: no-repeat;
-  background-position: 1080px 34px;
+  background-position: 940px 33px;
 }
 
 .catalog-sorting-item:nth-child(3),
 .catalog-sorting-item:nth-child(4){
   background-image: url("../img/stars-two.svg");
   background-repeat: no-repeat;
-  background-position: 1095px 34px;
+  background-position: 955px 33px;
 }
 
 .download-more {
@@ -1352,9 +1383,11 @@ input[type="checkbox"]:active + label::before {
 }
 
 .download_more {
-  padding: 13px 0 17px;
-  background: #83B3D3;
+  padding: 13px 0 16px;
   width: 625px;
+  font-size: 20px;
+  line-height: 26px;
+  background: #83B3D3;
   border-radius: 4px;
 }
 
@@ -1375,7 +1408,10 @@ input[type="checkbox"]:active + label::before {
 }
 
 .pagination-item {
-  margin-right: 5px;
+  position: relative;
+  right: 1px;
+  top: -1px;
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -1435,11 +1471,11 @@ input[type="checkbox"]:active + label::before {
 .select-control {
   width: 160px;
   margin-right: auto;
-  margin-left: 51px;
+  margin-left: 50px;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 17px;
+  padding: 12px 16px;
   background-image: url("../img/cheap-first.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
@@ -1448,17 +1484,18 @@ input[type="checkbox"]:active + label::before {
 
 .appointment-catalog {
   text-align: center;
+  margin-bottom: 44px;
 }
 
 .appointment-catalog-title {
-  padding-top: 94px;
-  padding-bottom: 15px;
+  padding-top: 86px;
+  padding-bottom: 29px;
   margin: 0 auto;
 }
 
 .appointment-catalog-description {
   width: 720px;
-  padding-bottom: 26px;
+  padding-bottom: 48px;
   margin: 0 240px;
 }
 
@@ -1620,8 +1657,8 @@ input[type="checkbox"]:active + label::before {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  right: 70px;
+  top: 53px;
+  right: 68px;
   width: 56px;
   height: 56px;
   border: none;
@@ -1659,7 +1696,8 @@ input[type="checkbox"]:active + label::before {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 61px;
+  margin-left: -2px;
   line-height: 40px;
 }
 
@@ -1698,6 +1736,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .arrival-date label  {
+  position: relative;
+  top: 3px;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
@@ -1782,8 +1822,8 @@ input[type="checkbox"]:active + label::before {
 .modal-info {
   position: relative;
   right: -10px;
-  top: 5px;
-  padding: 1px 15px;
+  top: 6px;
+  padding: 0 13px;
   background-color: #83B3D3;
   border-radius: 50%;
 }
@@ -1796,18 +1836,18 @@ input[type="checkbox"]:active + label::before {
 
 .triangle-modal {
   position: absolute;
-  top: 40px;
-  left: 5px;
+  top: 33px;
+  left: 3px;
   fill: "#333333";
   opacity: 0;
 }
 
 .modal-popover {
   position: absolute;
-  top: 33px;
-  left: -110px;
+  top: 26px;
+  left: -115px;
   width: 216px;
-  padding: 15px 18px 22px 22px;
+  padding: 21px 16px 22px 24px;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -1846,11 +1886,13 @@ input[type="checkbox"]:active + label::before {
 .quantity-link-minus {
   position: relative;
   top: -2px;
+  right: 5px;
 }
 
 .quantity-link-plus {
   position: relative;
   top: -2px;
+  right: -5px;
 }
 
 .quantity-link:hover {
@@ -1880,8 +1922,18 @@ input[type="checkbox"]:active + label::before {
   fill: #000000;
 }
 
-.adults,
+.adults {
+  position: relative;
+  top: 3px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
 .quantity-adults {
+  position: relative;
+  top: -2px;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
@@ -1889,6 +1941,8 @@ input[type="checkbox"]:active + label::before {
 }
 
 .button-modal {
+  position: relative;
+  top: -2px;
   grid-column: 1 / 6;
   grid-row: 7 / 8;
   width: 575px;
