@@ -248,15 +248,15 @@
             <form class="arrival-date" action="https://echo.htmlacademy.ru/" method="post">
               <label>Дата заезда:</label>
               <input type="text" id="arrival-text" name="text" placeholder="Укажите дату">
-            </form>
+
             <p class="error-message">Мы не можем отправить вас в прошлое.</p>
-            <form class="arrival-date departure-date" action="https://echo.htmlacademy.ru/" method="post">
+
               <label>Дата выезда:</label>
               <input type="text" id="departure-text" name="text" placeholder="Укажите дату">
-            </form>
+
             <p class="success-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="number-adults">
-              <span class="adults">Взрослые:</span>
+              <label class="adults">Взрослые:</label>
             </div>
             <ul class="quantity">
               <li class="quantity-item">
@@ -317,6 +317,7 @@
               </li>
             </ul>
             <button class="button button_blue_big button-modal" type="submit">Найти</button>
+            </form>
           </div>
         </section>
       </div>
