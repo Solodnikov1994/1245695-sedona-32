@@ -245,77 +245,66 @@
             <span class="visually-hidden">Закрыть</span>
           </button>
           <div class="modal-form">
-            <form class="arrival-date" action="https://echo.htmlacademy.ru/" method="post">
-              <label>Дата заезда:</label>
-              <input type="text" id="arrival-text" name="text" placeholder="Укажите дату">
-
-            <p class="error-message">Мы не можем отправить вас в прошлое.</p>
-
-              <label>Дата выезда:</label>
-              <input type="text" id="departure-text" name="text" placeholder="Укажите дату">
-
-            <p class="success-message">На эти даты есть свободные номера. Пока есть.</p>
-            <div class="number-adults">
-              <label class="adults">Взрослые:</label>
-            </div>
-            <ul class="quantity">
-              <li class="quantity-item">
-                <a class="quantity-link quantity-link-minus" href="#">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="arrival-date">
+                <label>Дата заезда:</label>
+                <input type="text" id="arrival-text" name="text" placeholder="Укажите дату">
+              </div>
+              <div class="error-message">
+                <span >Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="arrival-date departure-date">
+                <label>Дата выезда:</label>
+                <input type="text" id="departure-text" name="text" placeholder="Укажите дату">
+              </div>
+              <div class="success-message">
+                <span class="success-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="arrival-date quantity-adults">
+                <label class="adults">Взрослые:</label>
+                <button class="quantity-link quantity-link-minus" type="submit">
                   <svg class="minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <span class="quantity-adults">2</span>
-              </li>
-              <li class="quantity-item">
-                <a class="quantity-link quantity-link-plus" href="#">
+                      <path d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
+                </button>
+                <input type="text" name="text" placeholder="2">
+                <button class="quantity-link quantity-link-plus" type="submit">
                   <svg class="plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
                   </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="number-children">
-              <span class="adults">Дети:</span>
-              <a class="modal-info">
-                <svg class="info" aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_346:217)">
-                  <path d="M0 9H1L1 3H0L0 9Z"/>
-                  <path d="M1 0H0V1H1V0Z"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_346:217">
-                  <rect width="1" height="9"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-                <svg class="triangle-modal" aria-hidden="true" focusable="false" width="19" height="9" viewBox="0 0 19 9" xmlns="http://www.w3.org/2000/svg">
+                </button>
+              </div>
+              <div class="arrival-date number-children">
+                <label class="adults">Дети:</label>
+                <button class="modal-info" type="submit">
+                  <svg class="info" aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_346:217)">
+                    <path d="M0 9H1L1 3H0L0 9Z"/>
+                    <path d="M1 0H0V1H1V0Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_346:217">
+                    <rect width="1" height="9"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="triangle-modal" aria-hidden="true" focusable="false" width="19" height="9" viewBox="0 0 19 9" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 0L19 9H0L9.5 0Z"/>
-                </svg>
-                <p class="modal-popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-              </a>
-            </div>
-            <ul class="quantity quantity-children">
-              <li class="quantity-item">
-                <a class="quantity-link quantity-link-minus" href="#">
+                  </svg>
+                  <span class="modal-popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </button>
+                <button class="quantity-link quantity-link-minus" type="submit">
                   <svg class="minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 1L13 1V0L0 0Z"/>
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
                   </svg>
-                </a>
-              </li>
-              <li>
-                <span class="quantity-adults">1</span>
-              </li>
-              <li class="quantity-item">
-                <a class="quantity-link quantity-link-plus" href="#">
+                </button>
+                <input type="text" name="text" placeholder="1">
+                <button class="quantity-link quantity-link-plus" type="submit">
                   <svg class="plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
                   </svg>
-                </a>
-              </li>
-            </ul>
+                </button>
+              </div>
             <button class="button button_blue_big button-modal" type="submit">Найти</button>
             </form>
           </div>
