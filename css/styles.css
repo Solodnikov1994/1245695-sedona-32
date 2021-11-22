@@ -1698,7 +1698,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .modal-active .modal-container {
-  display: none;
+  display: flex;
 }
 
 .modal {
