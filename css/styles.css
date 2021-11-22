@@ -391,7 +391,8 @@ body {
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   background-color: green;
-  margin-bottom: 56px;
+  background-size: cover;
+  margin-bottom: 61px;
 }
 
 .first-screen {
@@ -408,6 +409,10 @@ h1 {
 .welcome {
   padding-top: 51px;
   padding-bottom: 20px;
+}
+
+.footer-background {
+  display: block;
 }
 
 h2 {
