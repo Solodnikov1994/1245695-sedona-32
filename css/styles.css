@@ -84,13 +84,11 @@ body {
   list-style-type: none;
 }
 
-
 .navigation-user {
   position: relative;
   left: -30px;
   justify-content: flex-end;
 }
-
 
 .navigation-item {
   max-width: 130px;
@@ -395,12 +393,24 @@ body {
   margin-bottom: 61px;
 }
 
+.index-background::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/footer-background.png");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+}
+
 .first-screen {
   text-align: center;
   padding-bottom: 80px;
 }
 
-h1 {
+.inner-header-title {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
@@ -411,21 +421,14 @@ h1 {
   padding-bottom: 20px;
 }
 
-.footer-background {
-  display: block;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
 .first-screen-title {
   width: 720px;
   padding-bottom: 33px;
   margin: 0 auto;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .first-screen-description {
@@ -447,7 +450,7 @@ h2 {
   list-style-type: none;
 }
 
-h3 {
+.advantages-cart {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -586,6 +589,10 @@ h3 {
   padding-top: 89px;
   padding-bottom: 30px;
   margin: 0 auto;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .hotel-search-description {
@@ -639,7 +646,10 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  font-size: 30px;
+  line-height: 36px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .appointment-description {
@@ -1104,7 +1114,10 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .sorting {
+  font-size: 30px;
   line-height: 39px;
+  color: #000000;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -1542,6 +1555,10 @@ input[type="checkbox"]:disabled + label::before {
   padding-top: 86px;
   padding-bottom: 29px;
   margin: 0 auto;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .appointment-catalog-description {
@@ -1755,7 +1772,10 @@ input[type="checkbox"]:disabled + label::before {
   margin: 0;
   margin-bottom: 61px;
   margin-left: -2px;
+  font-size: 30px;
   line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .arrival-date {
@@ -1781,6 +1801,10 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #F2F2F2;
   border-radius: 4px;
   padding: 0 19px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
   color: #000000;
   border: none;
   background-image: url("../img/calendar.svg");
@@ -1806,9 +1830,6 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .arrival-date input::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
   color: #000000;
   opacity: 0.6;
 }
