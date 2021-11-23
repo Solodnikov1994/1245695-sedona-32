@@ -282,6 +282,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
+  color: #000000;
 }
 
 .cart-item-estate {
@@ -386,10 +387,12 @@ body {
 }
 
 .index-background {
+  position: relative;
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   background-color: green;
   background-size: cover;
+  padding-bottom: 57px;
   margin-bottom: 61px;
 }
 
@@ -497,7 +500,7 @@ body {
   padding-bottom: 88px;
 }
 
-.icon-text > h3 {
+.icon-text > .advantages-cart {
   padding-bottom: 20px;
   margin: 0 auto;
 }
@@ -549,7 +552,7 @@ body {
   margin: 0 auto;
 }
 
-.real-town-cold > h3 {
+.real-town-cold > .advantages-cart {
   color: #FFFFFF;
   padding-bottom: 28px;
   margin: 0 auto;
@@ -566,7 +569,7 @@ body {
   color: #FFFFFF;
 }
 
-.real-town-cold-light > h3 {
+.real-town-cold-light > .advantages-cart {
   padding-bottom: 27px;
   margin: 0 auto;
 }
@@ -1140,33 +1143,9 @@ input[type="checkbox"]:disabled + label::before {
 .cheap {
   display: block;
   position: relative;
-  top: 7px;
-  width: 287px;
-  min-height: 48px;
-  padding: 10px;
-  padding-left: 17px;
-  padding-right: 100px;
-  font-size: 18px;
-  line-height: 23px;
-  color: #333333;
-  text-decoration: none;
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.cheap:hover {
-  border: 2px solid #83B3D3;
-}
-
-.cheap:focus {
-  border: 2px solid #83B3D3;
-  outline: none;
-}
-
-.cheap:active {
-  border: 2px solid #E6E6E6;
-  opacity: 0.3;
+  top: 6px;
+  right: 2px;
+  min-width: 287px;
 }
 
 .ones {
@@ -1520,12 +1499,6 @@ input[type="checkbox"]:disabled + label::before {
   line-height: 23px;
 }
 
-.number-form select {
-  font-size: 18px;
-  line-height: 23px;
-  color: #333333;
-}
-
 .select {
   position: relative;
   display: flex;
@@ -1534,7 +1507,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .select-control {
   width: 160px;
-  padding: 12px 16px;
+  padding: 11px 15px;
   margin-right: auto;
   margin-left: 50px;
   border: 2px solid #E6E6E6;
@@ -1544,6 +1517,24 @@ input[type="checkbox"]:disabled + label::before {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.select-control:hover {
+  border: 2px solid #83B3D3;
+}
+
+.select-control:focus {
+  border: 2px solid #83B3D3;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #E6E6E6;
+  opacity: 0.3;
 }
 
 .appointment-catalog {

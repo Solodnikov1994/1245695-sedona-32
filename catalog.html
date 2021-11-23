@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -209,11 +209,14 @@
             <h2 class="sorting">Найдено гостиниц: 38</h2>
             <ul class="mode-list">
               <li class="mode-item-cheap">
-                <a class="cheap" href="#">Сначала дешевые
-                  <svg class="ones" focusable="false" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ссылка">
-                    <path d="M6.6 6.7001L11.7 1.4001C12 1.1001 12 0.500098 11.7 0.200098C11.4 -0.0999023 10.8 -0.0999023 10.5 0.200098L6 4.9001L1.5 0.200098C1.2 -0.0999023 0.6 -0.0999023 0.3 0.200098C0.1 0.300098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.3 1.4001L5.4 6.7001C5.7 7.1001 6.3 7.1001 6.6 6.7001Z" opacity="0.6"/>
-                  </svg>
-                </a>
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="visually-hidden" for="sort">Сортировка</label>
+                  <select id="sort" class="cheap select-control">
+                    <option value="cheap-first">Сначала дешевые</option>
+                    <option value="rich-first">Сначала дорогие</option>
+                  </select>
+                  <input class="visually-hidden" type="submit">
+                </form>
               </li>
               <li class="mode-item">
                 <a class="button_transparent card-grid-toggle" href="#">
